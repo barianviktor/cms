@@ -1,0 +1,11 @@
+.file-container {
+  width: 300px;
+  height: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 100%;
+  }
+}

@@ -3,6 +3,8 @@ import "./add-restaurant.scss";
 import TextField from "../../../shared/text-field/text-field";
 import { TextFieldStyleTypes } from "../../../interfaces/TextFieldStyleTypes";
 import Button from "../../../shared/button/button";
+import FileInput from "../../../shared/file-input/file-input";
+import { FileTypes } from "../../../interfaces/FileTypes";
 
 interface Restaurant {
   id?: string;
@@ -41,6 +43,7 @@ export default function AddRestaurant() {
     name: "",
     locations: [],
   });
+  const [files, setFiles] = React.useState<File[]>([]);
   const [errors, setErrors] = React.useState<{ [key: string]: string }>({});
   const onCreateRestaurant = async () => {
     console.log("create restaurant");
@@ -72,6 +75,15 @@ export default function AddRestaurant() {
           error={errors.name}
           styleType={TextFieldStyleTypes.STANDARD}
           onBlur={onNameBlur}
+        />
+        <FileInput
+          id={"avatar-input"}
+          name={"avatar-input"}
+          accept={[FileTypes.JPEG, FileTypes.PNG, FileTypes.GIF]}
+          maxSize={10000000}
+          multiple={false}
+          files={files}
+          setFiles={setFiles}
         />
         <Button
           id="create-restaurant"
