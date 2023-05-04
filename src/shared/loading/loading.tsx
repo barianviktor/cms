@@ -11,13 +11,13 @@ export interface LoadingProps {
 }
 
 export default function Loading({
-  type = LoadingTypes.puff,
+  type = LoadingTypes.PUFF,
   size = 50,
   color = "black",
 }: LoadingProps) {
   return (
     <div className="loading-wrapper">
-      {type === LoadingTypes.clip && (
+      {type === LoadingTypes.CLIP && (
         <ClipLoader
           size={size}
           color={color}
@@ -25,7 +25,7 @@ export default function Loading({
           data-testid="loader"
         />
       )}
-      {type === LoadingTypes.puff && (
+      {type === LoadingTypes.PUFF && (
         <PuffLoader
           size={size}
           color={color}
@@ -34,7 +34,7 @@ export default function Loading({
         />
       )}
 
-      {type === LoadingTypes.bar && (
+      {type === LoadingTypes.BAR && (
         <BarLoader
           color={color}
           aria-label="Loading Spinner"

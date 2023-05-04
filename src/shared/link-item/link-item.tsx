@@ -14,7 +14,7 @@ export interface LinkProps {
 
 export default function LinkItem({ href, children }: LinkProps) {
   switch (href.type) {
-    case LinkTypes.internal:
+    case LinkTypes.INTERNAL:
       return (
         <Link
           className={`${href.workLikeRegularText && "remove-excess"}`}
@@ -23,7 +23,7 @@ export default function LinkItem({ href, children }: LinkProps) {
           {children}
         </Link>
       );
-    case LinkTypes.external:
+    case LinkTypes.EXTERNAL:
       return (
         <a
           className={`${href.workLikeRegularText && "remove-excess"}`}

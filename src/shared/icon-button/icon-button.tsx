@@ -22,8 +22,8 @@ export default function IconButton({
   onClick,
   ripple,
   disabled,
-  color = ColorTypes.primary,
-  size = ButtonSizeTypes.medium,
+  color = ColorTypes.PRIMARY,
+  size = ButtonSizeTypes.MEDIUM,
   href,
   elevation = true,
 }: IconButtonProps) {

@@ -1,5 +1,5 @@
 export enum ColorTypes {
-  primary = "PRIMARY",
-  accent = "ACCENT",
-  error = "ERROR",
+  PRIMARY = "PRIMARY",
+  ACCENT = "ACCENT",
+  ERROR = "ERROR",
 }

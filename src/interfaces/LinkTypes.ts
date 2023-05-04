@@ -1,4 +1,4 @@
 export enum LinkTypes {
-  internal = "INTERNAL",
-  external = "EXTERNAL",
+  INTERNAL = "INTERNAL",
+  EXTERNAL = "EXTERNAL",
 }

@@ -17,7 +17,7 @@ export default function Navigation() {
       <LinkItem
         href={{
           to: "/asd",
-          type: LinkTypes.internal,
+          type: LinkTypes.INTERNAL,
           workLikeRegularText: true,
         }}
       >

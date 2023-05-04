@@ -1,5 +1,5 @@
 export enum ButtonSizeTypes {
-  small = "SMALL",
-  medium = "MEDIUM",
-  large = "LARGE",
+  SMALL = "SMALL",
+  MEDIUM = "MEDIUM",
+  LARGE = "LARGE",
 }

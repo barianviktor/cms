@@ -77,6 +77,7 @@ import {
 } from "./store/slices/auth";
 import Loading from "./shared/loading/loading";
 import { LoadingTypes } from "./interfaces/LoadingTypes";
+import AddRestaurant from "./pages/Restaurant/Add/add-restaurant";
 
 export default function Routes() {
   const authenticated = useSelector(isUserAuthenticatedSelector);
@@ -131,7 +132,7 @@ export default function Routes() {
         <button onClick={onLogout}>logout</button>
         <button onClick={onSignUp}>signup</button>
       </div>
-      <Loading type={LoadingTypes.clip} />
+      <AddRestaurant />
     </div>
   );
 }
